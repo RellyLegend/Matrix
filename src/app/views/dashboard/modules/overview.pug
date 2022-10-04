@@ -1,0 +1,26 @@
+section#overviewModule.module.px-5
+  h1.display-5.text-center #[i.fas.fa-eye.pr-1.text-muted] Overview
+  .form-group.mt-5
+    .row.text-center
+      .col-lg-3.col-md-6
+        .border.rounded.m-3.p-3
+          p.uppercase
+            strong.ml-1 #[i.fas.fa-user-ninja.pr-1.text-muted] Server ID
+          p.mb-0 #{server.info.id}
+      .col-lg-3.col-md-6
+        .border.rounded.m-3.p-3
+          p.uppercase
+            strong.ml-1 #[i.fas.fa-terminal.pr-1.text-muted] Prefix
+          p.mb-0 #{server.data.settings.prefix}
+      .col-lg-3.col-md-6
+        .border.rounded.m-3.p-3
+          p.uppercase
+            strong.ml-1 #[i.fas.fa-terminal.pr-1.text-muted] Creation Date
+          p.mb-0 #{new Date(server.info.createdAt).toLocaleDateString()}
+      .col-lg-3.col-md-6
+        .border.rounded.m-3.p-3
+          p.uppercase
+            strong.ml-1 #[i.fas.fa-robot.pr-1.text-muted] Commands
+          p.mb-0 #{server.data.ranCommands > 1 ? server.data.ranCommands.toLocaleString() + ' commands' : server.data.ranCommands.toLocaleString() + ' command'}
+    hr
+    p.text-center #[i.fas.fa-arrow-left] Select a module on the left!

@@ -1,0 +1,104 @@
+/* Navbar */
+.navbar a {
+    color: var(--text-color)
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.logout-button:hover {
+    color: red;
+}
+
+/* Other */
+
+.text-none {
+    text-decoration: none;
+    background-color: transparent;
+    
+}
+
+.navbar img {
+    max-width: 48px;
+}
+
+.bg-sec {
+    background-color: var(--background-secondary);
+}
+
+.round {
+    border-radius: 36px;
+}
+
+.guilded {
+    color: black;
+}
+
+.user-avatar {
+    max-width: 36px;
+}
+
+/* cards */
+
+.card {
+    display: flex;
+    max-width: 24rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--background-secondary);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+
+.server-card {
+    display: flex;
+    max-width: 20rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--background-secondary);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+  .card:hover, .server-card:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transition: 0.3s;
+  }
+  .card-logo-wrapper {
+    flex-shrink: 0;
+  }
+  .card-logo {
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1rem;
+  }
+  .card-content {
+    margin-left: 1.5rem;
+    padding-top: 0.25rem;
+  }
+  .card-title {
+    color: var(--font);
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .card-message {
+    color: var(--font);
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+/* scroll wheel */
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+  background-color: skyblue;
+  outline: 1px solid skyblue;
+  }

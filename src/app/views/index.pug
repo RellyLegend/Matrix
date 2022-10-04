@@ -1,0 +1,16 @@
+html(lang='gb')
+    head
+        include includes/header
+    body
+        include includes/navbar
+        .jumbotron.text-center.bg-transparent
+            if user
+                h3.display-5 #[img.round.user-avatar(src=user.avatar)] Hello, #{user.name}
+                p Are you ready to check out the Matrix Dashboard?
+                a.btn.btn-warning(href='/dashboard') #[i.fab.fa-guilded.guilded] Take me there!
+            else
+                h3.display-5 #[img.round.user-avatar(src='/img/logo.png')] Matrix - Guilded Bot
+                p A new Guilded Bot.
+                a.btn.btn-primary(href='/invite') #[i.fas.fa-plus] Add
+                p
+                a.btn.btn-warning(href='/login') #[i.fab.fa-guilded.guilded] Dashboard

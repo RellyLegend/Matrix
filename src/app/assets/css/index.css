@@ -1,0 +1,13 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: var(--background-primary) !important;
+    color: var(--text-color);
+}
+
+.jumbotron {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 15vh;
+    border-radius: 36px;
+}

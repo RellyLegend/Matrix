@@ -1,0 +1,9 @@
+html(lang='gb')
+    head
+        include includes/header
+    body
+        .jumbotron.text-center.bg-transparent
+            h1.display-1 #[i.fas.fa-globe.text-danger]
+            h1.display-5 #{code || "404"}
+            p #{message || "Uh oh! Seems like Matrix can't reach you... let's get back to safety!"}
+            a.btn.btn-success(href='/') #[i.fas.fa-home] Go Home

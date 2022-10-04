@@ -1,0 +1,14 @@
+section#settingsModule.module.container.px-5
+  form(action='/dashboard/servers/' + server.info.id + '/settings?_method=PUT', method='POST')
+    .jumbotron.bg-transparent.pb-0
+      h1.display-5.text-center #[i.fas.fa-cogs.pr-1.text-muted] Settings
+    hr
+    .form-group.mt-5
+      .row
+        .col-4
+          label #[i.fas.fa-terminal.pr-1.text-muted] Prefix
+          p.small.text-muted Set your own prefix for this server, which the bot will use to recongise a command.
+          input.form-control(type='text', name='prefix', value=server.data.settings.prefix, maxlength='1', required)
+        .col-4
+    .d-flex.justify-content-center
+      button.btn.btn-success #[i.fas.fa-rocket] Save
